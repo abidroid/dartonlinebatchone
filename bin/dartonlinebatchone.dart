@@ -10,41 +10,21 @@ in android studio
 import 'dart:math';
 void main() {
 
-  int months = 12;
-  double gpa = 3.3;
+  int birthYear; // variable declaration
+  birthYear = 0;
+  print(birthYear);
 
-  // print(months);
-  // print(gpa);
-  //
-  // num value;
-  // value = 3.3;
-  // print(value);
-  // value = 60;
-  // print(value);
+  // Optional
+  // Nullable
+  String? fiance;
+  print(fiance);
 
-  // Variable declaration
+  String? universityName;
 
-  // Type inference
-  var peshawarZalmiScore = 200;
-  //print(peshawarZalmiScore.runtimeType);
+  print(universityName);
 
-  var name = "Khan";
-  var isVaccinated = true;
-  //print(isVaccinated.toUpperCase());
-
-  // discouraged
-  dynamic variable;
-  variable = 123;
-  print(variable.runtimeType);
-
-  variable = "Khan";
-  print(variable.runtimeType);
-
-  variable = false;
-  print(variable.runtimeType);
-
-
-
+  double? gpa;
+  print(gpa);
 }
 
 
