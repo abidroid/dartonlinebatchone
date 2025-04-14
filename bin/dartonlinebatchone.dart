@@ -9,77 +9,42 @@ in android studio
 
 import 'dart:math';
 void main() {
-  print("Hello World!");
-  print("Flutter is Fun");
 
-  // variable declaration
-  // camel Casing
-  int currentYear;
-
-
-  currentYear = 2025;
-  print(currentYear);
-
-
-  currentYear = 2035;
-  print(currentYear);
-  print(currentYear.runtimeType);
-
-  int totalStudents = 10;
-  print(totalStudents);
-
-
+  int months = 12;
   double gpa = 3.3;
-  print(gpa);
 
-  gpa = 3.9;
-  print(gpa);
-  print(gpa.runtimeType);
+  // print(months);
+  // print(gpa);
+  //
+  // num value;
+  // value = 3.3;
+  // print(value);
+  // value = 60;
+  // print(value);
 
-  //final double pi = 3.14; // constant
-  print(pi);
+  // Variable declaration
 
-  const int totalMonthsInYear = 12;
+  // Type inference
+  var peshawarZalmiScore = 200;
+  //print(peshawarZalmiScore.runtimeType);
 
-  String name;
-  name = "Muhammad Abid";
-  print(name);
-  print(name.runtimeType);
+  var name = "Khan";
+  var isVaccinated = true;
+  //print(isVaccinated.toUpperCase());
 
-  String city = "PSH";
-  String courseName = '"Flutter" Batch 1 - Online';
-  print(courseName);
+  // discouraged
+  dynamic variable;
+  variable = 123;
+  print(variable.runtimeType);
 
-  String country = "'Pak'";
-  print(country.length);
-  print(country.runtimeType);
+  variable = "Khan";
+  print(variable.runtimeType);
 
-  String quaidName = '''
-    Muhammad
-    Ali
-    Jinnah
-      ''';
+  variable = false;
+  print(variable.runtimeType);
 
-  print(quaidName);
 
-  // multi line String
-  String message = '''
-  Select Operation
-  1. Addition
-  2. Subtraction
-  3. Multiplication
-  4. Division
-  Your choice ? ''';
 
-  print(message);
-
-  bool isLoggedIn = false;
-  bool isVaccinated = true;
-  bool isMarried = true;
-
-  if( isMarried){
-    print('Tabah day');
-  }
 }
 
 
