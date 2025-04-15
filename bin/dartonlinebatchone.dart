@@ -1,30 +1,31 @@
-// Thu April 10, 2025
 
-/*
-this
-is our
-first project
-in android studio
-*/
-
-import 'dart:math';
 void main() {
 
-  int birthYear; // variable declaration
-  birthYear = 0;
-  print(birthYear);
+  // String name = "Ali"; // string literal
+  // String university = "SUIT";
+  // String address = "Office # FF 1019, Deans Trade Center Peshawar";
+  //
 
-  // Optional
-  // Nullable
-  String? fiance;
-  print(fiance);
+  //
+  // print( city.toUpperCase() );
+  // print(city.toLowerCase());
+  // print(city.length);
 
-  String? universityName;
+  String firstName = "Muhammad";
+  String lastName = "Abid";
 
-  print(universityName);
+  // concatenation
+  // string interpolation
+  String fullName = "$firstName $lastName";
+  print(fullName);
 
-  double? gpa;
-  print(gpa);
+  var city = "Peshawar";
+  print("You live in $city");
+
+  int age = 30;
+  print("Your age is $age");
+  print( "You are $age years old");
+  print("You will be ${age + 10} after 10 years");
 }
 
 
