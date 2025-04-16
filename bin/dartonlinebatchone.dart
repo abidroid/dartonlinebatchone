@@ -1,19 +1,19 @@
 
 void main() {
 
-  print( 10 + 3 );
-  print( 10 - 3 );
-  print( 10 * 3 );
+  int a, b, result; // variable
 
-  print( 10 / 3 );  // double
-  print( 9 / 3 );   // double
+  a = 7;
+  b = 3;
 
-  print( 19 ~/ 3 ); // integer
-  print( 10 % 2 );
+  print('First Number : $a');
+  print('Second Number: $b');
 
-  num result =  2 + ( 20 / 4 ) * 5.0; // Priority
-  print(result);
+  result = a + b;
+  print('Sum of $a and $b is $result');
 
+  result = a - b;
+  print('Difference of $a and $b is $result');
 }
 
 
