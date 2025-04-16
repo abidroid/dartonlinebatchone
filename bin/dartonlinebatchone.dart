@@ -1,31 +1,19 @@
 
 void main() {
 
-  // String name = "Ali"; // string literal
-  // String university = "SUIT";
-  // String address = "Office # FF 1019, Deans Trade Center Peshawar";
-  //
+  print( 10 + 3 );
+  print( 10 - 3 );
+  print( 10 * 3 );
 
-  //
-  // print( city.toUpperCase() );
-  // print(city.toLowerCase());
-  // print(city.length);
+  print( 10 / 3 );  // double
+  print( 9 / 3 );   // double
 
-  String firstName = "Muhammad";
-  String lastName = "Abid";
+  print( 19 ~/ 3 ); // integer
+  print( 10 % 2 );
 
-  // concatenation
-  // string interpolation
-  String fullName = "$firstName $lastName";
-  print(fullName);
+  num result =  2 + ( 20 / 4 ) * 5.0; // Priority
+  print(result);
 
-  var city = "Peshawar";
-  print("You live in $city");
-
-  int age = 30;
-  print("Your age is $age");
-  print( "You are $age years old");
-  print("You will be ${age + 10} after 10 years");
 }
 
 
