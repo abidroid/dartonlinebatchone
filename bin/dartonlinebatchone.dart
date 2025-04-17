@@ -1,20 +1,17 @@
 
 void main() {
 
-  int a, b;
-  a = 10;
-  b = 20;
+  String n1, n2;
 
-  print( "Actual Values");
-  print( "a = $a, b = $b");
+  n1 = "12.7";
+  n2 = "87.2";
 
-  int temp = a; // temp = 10
-  a = b;        // a = 20
-  b = temp;     // b = 10
+  // convert String to int
 
-  print( "After Swapping Values");
-  print( "a = $a, b = $b");
+  double number1 = double.parse(n1);
+  double number2 = double.parse(n2);
 
+  print(number1 + number2);
 }
 
 
