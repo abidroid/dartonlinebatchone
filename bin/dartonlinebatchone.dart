@@ -1,19 +1,31 @@
 
 void main() {
 
-  int a, b, result; // variable
+  double english, urdu, maths, science, islamiat; // Variable declare
+  double obtainedMarks, percentage;
 
-  a = 7;
-  b = 3;
+  const totalMarks = 500;
+  // variable initialization with HARD CODED values
+  english = 88;
+  urdu = 56;
+  maths = 78;
+  science = 99;
+  islamiat = 65.5;
 
-  print('First Number : $a');
-  print('Second Number: $b');
+  print("*******************************");
+  print("              DMC              ");
+  print("*******************************");
+  print('English Marks: $english');
+  print("Urdu Marks:    $urdu");
+  print("Math Marks:    $maths");
+  print("Science Marks: $science");
+  print("Islamiat Marks:$islamiat");
 
-  result = a + b;
-  print('Sum of $a and $b is $result');
+  obtainedMarks = english + urdu + maths + science + islamiat + 30;
+  print("Obtained Marks: $obtainedMarks");
 
-  result = a - b;
-  print('Difference of $a and $b is $result');
+  percentage = obtainedMarks * 100 / totalMarks;
+  print("Percentage: $percentage");
 }
 
 
