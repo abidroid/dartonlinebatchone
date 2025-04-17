@@ -1,31 +1,20 @@
 
 void main() {
 
-  double english, urdu, maths, science, islamiat; // Variable declare
-  double obtainedMarks, percentage;
+  int a, b;
+  a = 10;
+  b = 20;
 
-  const totalMarks = 500;
-  // variable initialization with HARD CODED values
-  english = 88;
-  urdu = 56;
-  maths = 78;
-  science = 99;
-  islamiat = 65.5;
+  print( "Actual Values");
+  print( "a = $a, b = $b");
 
-  print("*******************************");
-  print("              DMC              ");
-  print("*******************************");
-  print('English Marks: $english');
-  print("Urdu Marks:    $urdu");
-  print("Math Marks:    $maths");
-  print("Science Marks: $science");
-  print("Islamiat Marks:$islamiat");
+  int temp = a; // temp = 10
+  a = b;        // a = 20
+  b = temp;     // b = 10
 
-  obtainedMarks = english + urdu + maths + science + islamiat + 30;
-  print("Obtained Marks: $obtainedMarks");
+  print( "After Swapping Values");
+  print( "a = $a, b = $b");
 
-  percentage = obtainedMarks * 100 / totalMarks;
-  print("Percentage: $percentage");
 }
 
 
