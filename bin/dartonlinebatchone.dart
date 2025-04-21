@@ -1,17 +1,23 @@
 
+import 'dart:io';
+
 void main() {
 
-  String n1, n2;
+  int age = 30;
+  print( "You are $age years old");
 
-  n1 = "12.7";
-  n2 = "87.2";
+  String name;
 
-  // convert String to int
+  stdout.write('Enter your name : ');
+  name = stdin.readLineSync()!;
 
-  double number1 = double.parse(n1);
-  double number2 = double.parse(n2);
+  print('Welcome $name');
 
-  print(number1 + number2);
+  String address;
+  stdout.write('Enter your address : ');
+  address = stdin.readLineSync()!;
+
+  print('wow you live in $address');
 }
 
 
