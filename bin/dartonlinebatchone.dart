@@ -2,14 +2,19 @@
 import 'dart:io';
 
 void main() {
-  String number;
-  stdout.write('Enter a number : ');
-  number = stdin.readLineSync()!;
 
-  int value = int.parse(number);
+  String n1, n2;
+  stdout.write('Enter first number : ');
+  n1 = stdin.readLineSync()!;
 
-  int square = value * value;
-  print('Square of $value is $square');
+  stdout.write('Enter second number : ');
+  n2 = stdin.readLineSync()!;
+
+  int v1 = int.parse(n1);
+  int v2 = int.parse(n2);
+
+  print(n1 + n2);
+  print(v1 + v2);
 
 }
 
