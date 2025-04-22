@@ -4,20 +4,23 @@ import 'dart:io';
 void main()
 {
 
-  int number;
+  int n1, n2, large;
+  stdout.write('Enter first number : ');
+  n1 = int.parse(stdin.readLineSync()!);
 
-  stdout.write( "Enter a number less than ten : ");
-  number = int.parse( stdin.readLineSync()! );
+  stdout.write('Enter second number : ');
+  n2 = int.parse(stdin.readLineSync()!);
 
-  if ( number >= 10 )
+  if( n1 > n2 )
   {
-    print("Very Bad");
+    large = n1;
   }
   else
   {
-    print("Shaabaash");
+    large = n2;
   }
-  print("End");
+
+  print("Large number is $large");
 }
 
 
