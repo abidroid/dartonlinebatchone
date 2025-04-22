@@ -1,21 +1,23 @@
 
 import 'dart:io';
 
-void main() {
+void main()
+{
 
-  String n1, n2;
-  stdout.write('Enter first number : ');
-  n1 = stdin.readLineSync()!;
+  int number;
 
-  stdout.write('Enter second number : ');
-  n2 = stdin.readLineSync()!;
+  stdout.write( "Enter a number less than ten : ");
+  number = int.parse( stdin.readLineSync()! );
 
-  int v1 = int.parse(n1);
-  int v2 = int.parse(n2);
-
-  print(n1 + n2);
-  print(v1 + v2);
-
+  if ( number >= 10 )
+  {
+    print("Very Bad");
+  }
+  else
+  {
+    print("Shaabaash");
+  }
+  print("End");
 }
 
 
