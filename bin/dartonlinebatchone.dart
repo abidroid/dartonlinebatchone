@@ -3,24 +3,36 @@ import 'dart:io';
 
 void main()
 {
+  int monthNumber;
 
-  int n1, n2, large;
-  stdout.write('Enter first number : ');
-  n1 = int.parse(stdin.readLineSync()!);
+  stdout.write('Enter month number : ');
+  monthNumber = int.parse( stdin.readLineSync()! );
 
-  stdout.write('Enter second number : ');
-  n2 = int.parse(stdin.readLineSync()!);
-
-  if( n1 > n2 )
-  {
-    large = n1;
-  }
-  else
-  {
-    large = n2;
+  if( monthNumber == 1 ){
+    print('January');
   }
 
-  print("Large number is $large");
+  if( monthNumber == 2 ){
+    print('February');
+  }
+
+  if( monthNumber == 3 ) {
+    print('March');
+  }
+
+  // write yourself
+
+  if( monthNumber == 12 ) {
+    print('December');
+  }
+
+  if( monthNumber > 12 ) {
+    print('Invalid month number');
+  }
+
+  if( monthNumber <= 0) {
+    print('Invalid month number');
+  }
 }
 
 
