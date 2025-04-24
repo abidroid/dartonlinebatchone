@@ -4,31 +4,32 @@ import 'dart:vmservice_io';
 
 void main()
 {
-  int n1, n2, choice;
+  int n1, n2;
+  String choice;
   stdout.write('Enter first number : ');
   n1 = int.parse(stdin.readLineSync()!);
   stdout.write('Enter second number : ');
   n2 = int.parse(stdin.readLineSync()!);
   String message = '''
  Select Operation
- 1. Add
- 2. Sub
- 3. Mul
- 4. Div
+ +. Add
+ -. Sub
+ *. Mul
+ /. Div
  Your choice ? ''';
 
   stdout.write(message);
-  choice = int.parse(stdin.readLineSync()!);
+  choice = stdin.readLineSync()!;
 
   switch( choice )
   {
-    case 1:
+    case "+":
       print('Sum = ${n1+n2}');
-    case 2:
+    case "-":
       print('Difference = ${n1-n2}');
-    case 3:
+    case "*":
       print('Product = ${n1*n2}');
-    case 4:
+    case "/":
       print('Quotient = ${n1/n2}');
     default:
       print("Invalid operation code");
