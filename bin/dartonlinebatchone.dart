@@ -1,5 +1,6 @@
 
 import 'dart:io';
+import 'dart:vmservice_io';
 
 void main()
 {
@@ -19,21 +20,38 @@ void main()
   stdout.write(message);
   choice = int.parse(stdin.readLineSync()!);
 
-  if( choice == 1){
-    print('Sum = ${n1+n2}');
+  switch( choice )
+  {
+    case 1:
+      print('Sum = ${n1+n2}');
+    case 2:
+      print('Difference = ${n1-n2}');
+    case 3:
+      print('Product = ${n1*n2}');
+    case 4:
+      print('Quotient = ${n1/n2}');
+    default:
+      print("Invalid operation code");
   }
-  else if( choice == 2 ){
-    print('Difference = ${n1-n2}');
-  }
-  else if( choice == 3){
-    print('Product = ${n1*n2}');
-  }
-  else if( choice == 4){
-    print('Quotient = ${n1 / n2}');
-  }
-  else {
-    print('Invalid operation code');
-  }
+
+
+
+
+  // if( choice == 1){
+  //   print('Sum = ${n1+n2}');
+  // }
+  // else if( choice == 2 ){
+  //   print('Difference = ${n1-n2}');
+  // }
+  // else if( choice == 3){
+  //   print('Product = ${n1*n2}');
+  // }
+  // else if( choice == 4){
+  //   print('Quotient = ${n1 / n2}');
+  // }
+  // else {
+  //   print('Invalid operation code');
+  // }
 }
 
 
