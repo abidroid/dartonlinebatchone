@@ -10,11 +10,18 @@ void main()
   stdout.write('Enter second number : ');
   n2 = int.parse( stdin.readLineSync()!);
 
-  if( n1 > n2 ) print('Large number is $n1');
-
-  if( n2 > n1 ) print('Large number is $n2');
-
-  if( n1 == n2 ) print( 'Numbers are same');
+  if( n1 > n2 )
+  {
+    print('Large number is $n1');
+  }
+  else if( n2 > n1 )
+  {
+    print('Large number is $n2');
+  }
+  else
+  {
+    print( 'Numbers are same');
+  }
 }
 
 
