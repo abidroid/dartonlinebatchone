@@ -3,24 +3,11 @@ import 'dart:io';
 
 void main()
 {
-  int count = 0;
-  print(count);
-  count++;
-  print(count);
-  count = count + 1;
-  count += 1;
-  print(count);
+  int i;
 
-   print('************************');
-   count--;
-   print(count);
-
-   count =  count - 1;
-   print(count);
-   count -= 1;
-   print(count);
-
-
+  for( i = 1; i < 11; i++ ){
+    print('DART $i');
+  }
 
 }
 
