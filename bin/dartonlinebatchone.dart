@@ -3,10 +3,13 @@ import 'dart:io';
 
 void main()
 {
-  int i;
+  int num;
+  stdout.write('Enter a number : ');
+  num = int.parse(stdin.readLineSync()!);
 
-  for( i = 1; i < 11; i++ ){
-    print('DART $i');
+  for( var i = 1; i < 11; i++ ){
+
+    print('$num X $i = ${num * i}');
   }
 
 }
