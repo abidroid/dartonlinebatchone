@@ -3,25 +3,25 @@ import 'dart:io';
 
 void main()
 {
-  int month;
-  stdout.write('Enter month number : ');
-  month = int.parse( stdin.readLineSync()!);
+  int count = 0;
+  print(count);
+  count++;
+  print(count);
+  count = count + 1;
+  count += 1;
+  print(count);
 
-  if( month == 12 || month == 1 || month == 2){
-    print("Winter");
-  }
+   print('************************');
+   count--;
+   print(count);
 
-  if( month == 3 || month == 4 ){
-    print('Spring');
-  }
+   count =  count - 1;
+   print(count);
+   count -= 1;
+   print(count);
 
-  if( month == 5 || month == 6 || month == 7 || month == 8 || month == 9){
-    print("Summer");
-  }
 
-  if( month == 10 || month == 11){
-    print("Autumn");
-  }
+
 }
 
 
