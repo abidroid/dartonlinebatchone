@@ -4,11 +4,10 @@ import 'dart:io';
 void main()
 {
   int num1, num2;
-  String choice = "yes"; // majboori
+  String choice;
 
-  while( choice == "yes") // sentinel condition
+  do
   {
-
     stdout.write('Enter first number : ');
     num1 = int.parse( stdin.readLineSync()!);
 
@@ -19,7 +18,7 @@ void main()
 
     stdout.write('Do you want more additions(yes/no) ? ');
     choice = stdin.readLineSync()!;
-  }
+  }while( choice == "yes"); // sentinel condition
 
   print('Thank You for using our app. Come back soon');
 }
