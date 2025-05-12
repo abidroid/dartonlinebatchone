@@ -31,15 +31,49 @@ void main()
   // }
 
 
-  List<String> shoppingList = [
-    "Bread",
-    "Milk",
-    "Eggs",
-    "Pampers",
-  ];
+  // List<String> shoppingList = [
+  //   "Bread",
+  //   "Milk",
+  //   "Eggs",
+  //   "Pampers",
+  // ];
+  //
+  // for( var item in shoppingList){
+  //   print(item);
+  // }
 
-  for( var item in shoppingList){
-    print(item);
+  Map<String, int> playerJersey = {
+    "afridi": 10,
+    "kohli": 17,
+    "babar": 56,
+    "ronaldo": 7,
+  };
+
+  //print(playerJersey['babar']);
+
+  // APIs - Web Services
+  Map<String, dynamic> user = {
+    "username": "abidkhan",
+    "dob": "1st Nov",
+    "age": 54,
+    "cgpa": 3.3,
+    "isMarried": true,
+    "friends": [ "Ali", "Bilal", "Khan"],
+  };
+
+  //print(user['isMarried']);
+
+  for( var key in user.keys){
+    print('$key = ${user[key]}');
+  }
+
+  for( var value in user.values){
+    print(value);
+  }
+
+  print('************************');
+  for( var entry in user.entries){
+    print('${entry.key} = ${entry.value}');
   }
 }
 
