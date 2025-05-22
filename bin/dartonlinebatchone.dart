@@ -1,5 +1,4 @@
-class Student
-{
+class Student {
   // data members
   late String name;
   late String mobile;
@@ -7,9 +6,19 @@ class Student
   late int feePaid;
   String? uni;
 
+  // default constructor
+  // parameterized constructor
+  // named parameters
+  Student({
+    required this.name,
+    required this.mobile,
+    required this.totalFee,
+    required this.feePaid,
+    this.uni,
+  });
+
   // method
-  void show()
-  {
+  void show() {
     print("Name : $name");
     print("Mob  : $mobile");
     print("TFee : $totalFee");
@@ -18,26 +27,28 @@ class Student
   }
 }
 
-void main(){
-
+void main() {
   Student ali;
-  ali = Student(); // default constructor
+  ali = Student(
+    feePaid: 5000,
 
-  ali.name = "Muhammad Ali";
-  ali.mobile = "0838838383";
-  ali.totalFee = 10000;
-  ali.feePaid = 7000;
-  ali.uni = "SUIT";
+    mobile: '038838383',
+    totalFee: 10000,
+    name: 'Ali',
+  );
 
   ali.show();
+
   print("******************");
 
   Student hina;
-  hina = Student();
-  hina.name = "Hina Baji";
-  hina.mobile = "0383838383";
-  hina.totalFee = 10000;
-  hina.feePaid = 0;
+  hina = Student(
+    name: 'Hina',
+    mobile: '03838838',
+    totalFee: 10000,
+    feePaid: 0,
+    uni: null,
+  );
 
   hina.show();
 }
