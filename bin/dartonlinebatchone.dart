@@ -1,54 +1,80 @@
-class Student {
+class Person {
   // data members
   late String name;
-  late String mobile;
-  late int totalFee;
-  late int feePaid;
-  String? uni;
+  late String gender;
+  late String dob;
 
-  // default constructor
-  // parameterized constructor
-  // named parameters
-  Student({
-    required this.name,
-    required this.mobile,
-    required this.totalFee,
-    required this.feePaid,
-    this.uni,
+  // constructor
+  Person({required this.name, required this.gender, required this.dob});
+
+  // method
+  void displayPerson() {
+    print("Name:   $name");
+    print("Gender: $gender");
+    print("DOB:    $dob");
+  }
+}
+
+class Beggar extends Person {
+  late int dailyIncome;
+
+  Beggar({
+    required super.name,
+    required super.gender,
+    required super.dob,
+    required this.dailyIncome,
   });
 
   // method
-  void show() {
-    print("Name : $name");
-    print("Mob  : $mobile");
-    print("TFee : $totalFee");
-    print("FPaid: $feePaid");
-    print("Uni  : $uni");
+  void displayBeggar() {
+    print("Income: $dailyIncome");
   }
 }
 
 void main() {
-  Student ali;
-  ali = Student(
-    feePaid: 5000,
-
-    mobile: '038838383',
-    totalFee: 10000,
-    name: 'Ali',
+  Doctor ali = Doctor(
+    name: "Ali",
+    gender: "M",
+    dob: "2nd May",
+    spe: 'ENT',
+    fee: 2000,
   );
+  ali.displayPerson(); // inheritance
+  ali.displayDoctor();
 
-  ali.show();
-
-  print("******************");
-
-  Student hina;
-  hina = Student(
-    name: 'Hina',
-    mobile: '03838838',
-    totalFee: 10000,
-    feePaid: 0,
-    uni: null,
+  print("*************************************");
+  Beggar shehbaz = Beggar(
+    name: "SS",
+    gender: "M",
+    dob: '2nd Jun',
+    dailyIncome: 5000,
   );
+  shehbaz.displayPerson();
+  shehbaz.displayBeggar();
 
-  hina.show();
+  List<Person> doctorList = [
+    ali,
+    Doctor(name: "Hina", gender: "F", dob: "2 March", spe: "Cardio", fee: 2500),
+    shehbaz,
+  ];
+}
+
+class Doctor extends Person {
+  // data members
+  late String spe;
+  late int fee;
+
+  // constructor
+  Doctor({
+    required super.name,
+    required super.gender,
+    required super.dob,
+    required this.spe,
+    required this.fee,
+  });
+
+  void displayDoctor() {
+    print("SPE:  $spe");
+    print("Fee:  $fee");
+  }
 }
