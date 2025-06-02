@@ -1,58 +1,36 @@
-abstract class Animal
-{
-  void eat() => print("Eating...");
-  void sleep() => print("Sleeping...");
-  // abstract function
-  void sound();
-}
+import 'dart:io';
 
-class Cat extends Animal
-{
-  @override
-  void sound(){
-    print('Meow Meow Meow');
+void main() {
+  int num1, num2, result;
+
+  try {
+    stdout.write('Enter first number : ');
+    num1 = int.parse(stdin.readLineSync()!);
+    stdout.write('Enter second number : ');
+    num2 = int.parse(stdin.readLineSync()!);
+
+    result = num1 ~/ num2; // integer division
+    print('Quotient: $result');
+    print('Weldone');
+    print('All is well');
+    print('That ends well');
   }
-}
-
-class Horse extends Animal
-{
-  @override
-  void sound(){
-    print("heheheheheh");
+  on FormatException catch(fe)
+  {
+    print("Invalid input, try again");
   }
-}
-
-// pabandi - contract
-class Lion extends Animal
-{
-  @override
-  void sound() {
-    print('Roaring...');
+  on UnsupportedError catch(idbze)
+  {
+    print("Division by zero is not supported");
   }
-
-}
-
-
-void main(){
-
-  List<Animal> animals = [
-    Cat(),  // object instantiation
-    Horse(), // object instantiation
-    Lion(), // object instantiation
-    Cat(), // object instantiation
-  ];
-
-  for( var animal in animals){
-    animal.sound();
-    print("****************");
+  catch (e) {
+    print(e.toString());
+  }
+  finally {
+    print('Ye execute hoga he hoga');
   }
 
-  // Polymorphism
-  // Animal animal;
-  // animal = Cat();
-  // animal.sound();
-  // animal = Horse();
-  // animal.sound();
-  // animal = Lion();
-  // animal.sound();
+  print('Dart completed');
+  print('Advance Eid Mubarak');
+  print('The End');
 }
